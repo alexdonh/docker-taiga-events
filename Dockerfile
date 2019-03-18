@@ -22,4 +22,6 @@ EXPOSE 8888
 COPY config.json ./
 COPY start.sh /
 
+RUN chmod +x /start.sh || true
+
 CMD ["/start.sh"]
